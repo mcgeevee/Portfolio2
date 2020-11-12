@@ -282,10 +282,10 @@ pre {
 }
 
 #waterfall-image {
-  max-width: 350px;
-  max-height: 350px;
+  max-width: 250px;
+  max-height: 250px;
   object-fit: cover;
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
