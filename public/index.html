@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Stylesheets-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+
+  <!--Scripts-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c58f8cf9af.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.min.js"></script>
+  <script src="./assets/js/three.js"></script>
+  <script src="./assets/js/canvas.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+  <title>Erin McGeever Codes</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm">
+    <a class="navbar-brand" href="#">
+      <img src="./logo.png" alt="Erin McGeever Codes" id="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="list-unstyled components flex-column navbar-nav w-100 justify-content-between">
+        <li class="nav-item" id="home-link">
+          <h3 class="side-item" id="side-home">Home</h3>
+        </li>
+        <li class="nav-item" id="about-link">
+          <h3 class="side-item" id="side-about">About</h3>
+        </li>
+        <li class="nav-item" id="portfolio-link">
+          <h3 class="side-item" id="side-portfolio">Portfolio</h3>
+        </li>
+        <li class="nav-item" id="resume-link">
+          <h3 class="side-item" id="side-resume">Resume</h3>
+        </li>
+        <li class="nav-item" id="contact-link">
+          <h3 class="side-item" id="side-contact">Contact</h3>
+        </li>
+        <li class="nav-item">
+          <span id="social-media-links">
+            <a class="social-media-link" href="https://www.linkedin.com/in/erincolwell" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="social-media-link" href="https://www.facebook.com/sunshine.mcgeever" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a class="social-media-link" href="https://www.instagram.com/erinkmcgeever" target="_blank"><i class="fab fa-instagram-square"></i></a>
+            <a class="social-media-link" href="https://www.github.com/mcgeevee" target="_blank"><i class="fab fa-github-square"></i></a>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Intro page -->
+  <main class="container">
+    <section class="page" id="home-page">
+      <div class="flex">
+          <h1 class="intro" id="hello">Hello, my name is <span class="emphasize">Erin McGeever</span>.</h1>
+          <h3 class="intro" id="description">I'm a Full Stack Web Developer <br> based in Boulder, CO.</h3>
+          <button id="view">View my projects</button>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="page" id="about-page" style="display: none">
+      <div class="info">
+          <h1 class="about emphasize" id="about-header">About Me</h1>
+
+          <ul class="nav nav-tabs">
+            <li class="nav-link active" id="bulleted-tab">Bulleted Version</li>
+            <li class="nav-link" id="story-tab">Story Version</li>
+          </ul>
+
+          <div class="row">
+            <div class="col-md-7" id="bulleted-div">
+              <ul class="list-unstyled components bulleted">
+                <li class="bullet"><span>Current Location:</span> Boulder, CO</li>
+                <li class="bullet"><span>Hometown:</span> Longmont, CO</li>
+                <li class="bullet"><span>Education:</span>
+                  <ul class="list-unstyled components bulleted">
+                    <li class="bullet">&emsp; CU Boulder, 2015
+                      <ul class="list-unstyled bulleted">
+                        <li class="bullet">&emsp; &emsp; BA Biolgy</li>
+                        <li class="bullet">&emsp; &emsp; MS Project Mangement</li>
+                      </ul>
+                    </li>
+                    <li class="bullet">&emsp; UC Denver Coding Bootcamp, 2020</li>
+                     <ul class="list-unstyled bulleted">
+                       <li class="bullet">&emsp; &emsp; <a href="https://uclaextension.credly.com/member-badges/23307995" target="_blank" id="certificate">Certificate of Completion</a></li>
+                       <li class="bullet">&emsp; &emsp; Full Stack Web Development</li>
+                     </ul>
+                  </ul>
+                </li>
+                <li class="bullet"><span>Hobbies:</span>
+                  <ul class="list-unstyled components bulleted">
+                    <li class="bullet">&emsp; Stand Up Paddle Boarding</li>
+                    <li class="bullet">&emsp; Reading</li>
+                    <li class="bullet">&emsp; Tennis</li>
+                  </ul>
+                </li>
+                <li class="bullet"><span>Interests:</span>
+                  <ul class="list-unstyled components bulleted">
+                    <li class="bullet">&emsp; Singing Disney songs</li>
+                    <li class="bullet">&emsp; Phone games</li>
+                    <li class="bullet">&emsp; The color blue</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-7" id="story-div" style="display: none">
+              <p id="about-description">
+                When I was in high school, I took AP Computer Science and completely failed it. I was so discouraged from doing anything computer science related, and thus, I studied biology, creative writing, and russian lit in UC Boulder. But I did still have to take one computer science course for a GE, Introduction to Programming: Java. Something must have clicked back in high school because that class was a breeze. From there, I wanted to be a CS minor but I could not fit it into my schedule in four years. I tried self-studying throughout the years as well, but I never had the time or the motivation to sit down and commit.
+                <br><br>
+                So when I graduated and moved to home because I had my beautiful daughter during college. I decided to do the DU Coding Bootcamp, and it was the best decision I've ever made in my life.
+                <br><br>
+                When I'm not coding (or quarantined), I play with my 7 year old daughter, and sing my heart out to a myriad of Disney songs. And, if you couldn't tell, I love the color blue. Feel free to connect with me on LinkedIn!
+              </p>
+            </div>
+            <div class="col-md-5" id="waterfall-div">
+              <img src="assets/img/about/waterfall.jpg" alt="Hannah at Waterfall" id="waterfall-image">
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="page" id="portfolio-page" style="display: none">
+      <div class="info">
+          <h1 class="portfolio emphasize" id="portfolio-header">Portfolio</h1>
+          <hr>
+          <div class="row">
+            <div class="col">
+              <img class="portfolio-image" src="assets/img/portfolio/stx-box-office-thumbnail.jpg" alt="stx-box-office-thumbnail">
+            </div>
+            <div class="col">
+              <img class="portfolio-image" src="assets/img/portfolio/precious-metals-thumbnail.png" alt="precious-metals-thumbnail">
+            </div>
+            <div class="col">
+              <img class="portfolio-image" src="assets/img/portfolio/weather-dashboard-thumbnail.jpg" alt="weather-dashboard-thumbnail.jpg">
+            </div>
+            <div class="col">
+              <img class="portfolio-image" src="assets/img/portfolio/stx-box-office-thumbnail.jpg" alt="stx-box-office-thumbnail">
+            </div>
+            <div class="col">
+              <img class="portfolio-image" src="assets/img/portfolio/precious-metals-thumbnail.png" alt="precious-metals-thumbnail">
+            </div>
+            <div class="col">
+              <img class="portfolio-image" src="assets/img/portfolio/weather-dashboard-thumbnail.jpg" alt="weather-dashboard-thumbnail.jpg">
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section class="page" id="resume-page" style="display: none">
+      <div class="info">
+          <h1 class="resume emphasize" id="resume-header">Resume</h1>
+          <hr>
+          <iframe src="./assets/resume.pdf" height="100%" width="100%"></iframe>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="page" id="contact-page" style="display: none">
+      <div class="info">
+          <h1 class="contact emphasize" id="contact-header">Contact</h1>
+          <hr>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                
+              </div>
+              <div class="form-group col-md-6">
+                <label for="lastName">Last Name</label>
+                <input type="password" class="form-control" id="lastName" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="johnsmith@example.com">
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="message">Message</label>
+                <textarea type="text" class="form-control" id="message" rows="3"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn" id="send-message">Send Message</button>
+          </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span id="copyright">&copy; 2020 Erin McGeever</span>
+    <span id="social-media-links-footer">
+      <a class="social-media-link" href="https://www.linkedin.com/in/erincolwell" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a class="social-media-link" href="https://www.facebook.com/sunshine.mcgeever" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a class="social-media-link" href="https://www.instagram.com/erinkmcgeever" target="_blank"><i class="fab fa-instagram-square"></i></a>
+      <a class="social-media-link" href="https://www.github.com/mcgeevee" target="_blank"><i class="fab fa-github-square"></i></a>
+    </span>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,442 @@
+html {
+  height: 100%;
+}
+
+/* Background */
+
+body {
+  background-color: #193c6d;
+  filter: progid: DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#3a7ed6', endColorstr='#19191b');
+  background-image: url(//img.alicdn.com/tps/TB1d.u8MXXXXXXuXFXXXXXXXXXX-1900-790.jpg);
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, #3a7ed6), color-stop(100%, #19191b));
+  background-image: -webkit-linear-gradient(135deg, #3a7ed6, #19191b);
+  background-image: -moz-linear-gradient(45deg, #3a7ed6, #19191b);
+  background-image: -ms-linear-gradient(45deg, #3a7ed6 0, #19191b 100%);
+  background-image: -o-linear-gradient(45deg, #3a7ed6, #19191b);
+  background-image: linear-gradient(135deg, #3a7ed6, #19191b);
+  background-attachment: fixed;
+  text-align: center;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  max-width: 80vw;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+
+.row {
+  margin: 0;
+}
+
+hr {
+  display: block;
+  margin: 1em auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  border-color:#42b3b9;
+  width: 100%;
+}
+
+.info {
+  width: 80vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 50px;
+  line-height: 15.4px;
+  overflow: auto;
+  height: 100%;
+}
+
+/* Define Monaco font */
+
+h1 {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 3vw;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+h3 {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 2.34vw;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 1.2vw;
+}
+
+p, li {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 2vw;
+}
+
+blockquote {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+pre {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+
+.emphasize {
+  color: #42b3b9;
+}
+
+/* Intro page */
+
+.flex {
+  width: 80vw;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.intro {
+  color: white;
+  text-align: center;
+  line-height: 3.125vw;
+}
+
+#view {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  color: white;
+  margin-top: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 1.95vw;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+}
+
+#view:hover {
+  background-color: #42b3b9;
+  border-color: #42b3b9;
+}
+
+#view:focus {
+  outline: thin dotted;
+}
+
+/* Navbar */
+.navbar {
+  height: 100%;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #262a34;
+  border-right: 5px solid #42b3b9;
+  position: fixed;
+}
+
+.navbar-brand {
+  margin-top: 3vh;
+  margin-right: 0;
+  cursor: pointer;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(66,179,185)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler.navbar-toggler {
+  border-color: rgb(66,179,185);
+} 
+
+.navbar-toggler:focus {
+  outline: thin dotted;
+}
+
+#logo {
+  max-width: 100%;
+  max-height: 50%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.nav-item {
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+}
+
+.side-item:hover {
+  color: #42b3b9;
+}
+
+.side-item {
+  font-size: 1.95vw;
+}
+
+#social-media-links {
+  font-size: 3.125vw;
+}
+
+.social-media-link {
+  color: white;
+}
+
+.social-media-link:hover {
+  color: #42b3b9
+}
+
+/* About Section */
+
+.nav-tabs {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #42b3b9;
+  width: 100%;
+}
+
+.nav-link {
+  background-color: transparent;
+  color: #42b3b9;
+  cursor: pointer;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #42b3b9;
+  color: white;
+  border-bottom: 1px solid white;
+  border-color: #42b3b9;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: #42b3b9;
+}
+
+.bulleted {
+  text-align: left;
+}
+
+.bullet {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 2vw;
+}
+
+.col-md-7, .col-md-5 {
+  padding: 0;
+}
+
+#certificate {
+  text-decoration: none;
+  color: #42b3b9;
+}
+
+#certificate:hover {
+  color: #378c8f;
+}
+
+#waterfall-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#waterfall-image {
+  max-width: 350px;
+  max-height: 350px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+#story-div {
+  text-align: left;
+}
+
+/* Portfolio Section */
+
+.portfolio-image {
+  width: 250px;
+  height: 182.805px;
+  margin: 10px;
+}
+
+/* Contact Section */
+form {
+  text-align: left;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid #42b3b9 !important;
+  box-shadow: 0 0 3px #42b3b9 !important;
+  -moz-box-shadow: 0 0 3px #42b3b9 !important;
+  -webkit-box-shadow: 0 0 3px #42b3b9 !important;
+}
+  
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0px !important;
+  outline: none !important;
+}
+
+#send-message {
+  background-color: #42b3b9;
+  color: white;
+}
+
+#send-message:hover {
+  background-color: #378c8f;
+}
+
+#send-message:focus {
+  outline: thin dotted;
+}
+
+/* Footer */
+footer {
+  bottom: 0;
+  position: absolute;
+  height: 50px;
+  background-color: #262a34;
+  color: white;
+  width: 20vw;
+  padding: 10px;
+  margin-bottom: 0;
+  border-right: 5px solid #42b3b9;
+  text-align: center;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 1.2vw;
+}
+
+#social-media-links-footer {
+  display: none;
+}
+
+@media only screen and (max-width: 575px) {
+  .navbar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 5px solid #42b3b9;
+    position: static;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .navbar.navbar-expand-sm {
+    padding: 0;
+  }
+
+  .navbar-brand {
+    margin-top: 0;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  #navbarNav {
+    /* flex-direction: row; */
+    position: absolute;
+    right: 0;
+  }
+
+  .nav-item {
+    margin: 5px;
+  }
+
+  #social-media-links {
+    display: none;
+  }
+
+  .container {
+    height: 80vh;
+    max-width: 100vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+  }
+
+  .flex {
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  .info {
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+  }
+
+  footer {
+    width: 100%;
+    position: absolute;
+    border-right: none;
+    border-top: 5px solid #42b3b9;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #copyright {
+    position: absolute;
+    left: 20px;
+    display: inline-block;
+  }
+
+  #social-media-links-footer {
+    display: inline-block;
+    font-size: 2.5vw;
+    position: absolute;
+    right: 20px;
+  }
+}
